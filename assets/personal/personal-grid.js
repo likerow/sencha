@@ -266,7 +266,7 @@ Ext.onReady(function(){
     Ext.create('Ext.Panel', {
         renderTo: 'container',
         width: '100%',
-        height: 1360,
+        height: 1310,
         items: [
             {
                 weight: 1,
@@ -323,6 +323,19 @@ Ext.onReady(function(){
             gridDos, {
                 id: 'GridDos',
                 region: 'center'
+            },
+            {
+                xtype: 'box',
+                autoEl: {
+                    tag: 'div',
+                    style:'line-height:1px; font-size: 1px;margin-bottom:4px',
+                    children: [{
+                            tag: 'img',
+                            src: '1pxLine.gif',
+                            height: '2px',
+                            width: '100%'
+                    }]
+                }
             }
         ],
         dockedItems: [
@@ -332,9 +345,9 @@ Ext.onReady(function(){
                 items: [
                     {xtype:'tbtext', text: '<b>Indicador de libertad financiera</b>',width: '70%'},
                     {xtype: 'field',id: 'ind_libertad_1',name: 'ind_libertad_1',width: '15%',value: 0,
-                        style: 'margin-left:200px;font-weight: bold;color:#fff'},
+                        style: 'margin-left:565px;font-weight: bold;color:#fff'},
                     {xtype: 'field',id: 'ind_libertad_2',name: 'ind_libertad_2',width: '15%',
-                        value: 0,style: 'margin-left:15px;font-weight: bold;color:#fff'
+                        value: 0,style: 'margin-left:20px;font-weight: bold;color:#fff'
                     }
                 ]
             },
@@ -344,9 +357,9 @@ Ext.onReady(function(){
                 items: [
                     {xtype:'tbtext', text: '<b>Indicador de riqueza y pobreza</b>',width: '70%'},
                     {xtype: 'field',id: 'ind_riqueza_1',name: 'ind_riqueza_1',width: '15%',value: 0,
-                        style: 'margin-left:200px;font-weight: bold;color:#fff'},
+                        style: 'margin-left:565px;font-weight: bold;color:#fff'},
                     {xtype: 'field',id: 'ind_riqueza_2',name: 'ind_riqueza_2',width: '15%',
-                        value: 0,style: 'margin-left:15px;font-weight: bold;color:#fff'
+                        value: 0,style: 'margin-left:20px;font-weight: bold;color:#fff'
                     }
                 ]
             },
@@ -356,9 +369,9 @@ Ext.onReady(function(){
                 items: [
                     {xtype:'tbtext', text: '<b>Indicador de cobertura de deudas</b>',width: '70%'},
                     {xtype: 'field',id: 'ind_deudas_1',name: 'ind_deudas_1',width: '15%',value: 0,
-                        style: 'margin-left:200px;font-weight: bold;color:#fff'},
+                        style: 'margin-left:565px;font-weight: bold;color:#fff'},
                     {xtype: 'field',id: 'ind_deudas_2',name: 'ind_deudas_2',width: '15%',
-                        value: 0,style: 'margin-left:15px;font-weight: bold;color:#fff'
+                        value: 0,style: 'margin-left:20px;font-weight: bold;color:#fff'
                     }
                 ]
             }
