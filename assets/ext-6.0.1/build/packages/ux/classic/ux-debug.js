@@ -2393,7 +2393,7 @@ Ext.define('Ext.ux.google.Api', {
 
 /**
  * This class, when required, ensures that the Google RSS Feeds API is available.
- */
+ 
 Ext.define('Ext.ux.google.Feeds', {
     extend: 'Ext.ux.google.Api',
     requiresGoogle: {
