@@ -2396,7 +2396,7 @@ Ext.define('Ext.ux.google.Api', {
  */
 Ext.define('Ext.ux.google.Feeds', {
     extend: 'Ext.ux.google.Api',
-    requiresGoogle: {
+    _requiresGoogle: {
         api: 'feeds',
         nocss: true
     }
